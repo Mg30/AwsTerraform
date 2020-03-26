@@ -5,7 +5,7 @@ This repo contains all the module created via terraform in my trainning with dep
 
 ## 1 EC2 VPC IG SSH
 
-![alt](EC2 VPC IG SSH.png)
+![AWSGRAPH1](EC2_VPC_IG_SSH.png)
 
 
 VPC with a private subnet with an EC2 instance with internet gateway.

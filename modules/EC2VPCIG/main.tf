@@ -39,8 +39,8 @@ resource "aws_route_table_association" "MyRouteTableAssociation" {
 
 resource "aws_instance" "MyPublicEC2" {
   key_name      = aws_key_pair.MySSHKey.key_name
-  ami           = "ami-0fc61db8544a617ed"
-  instance_type = "t2.micro"
+  ami           = var.ami
+  instance_type = var.instanceType
   associate_public_ip_address = true
   subnet_id = aws_subnet.MyPublicSubnet.id
   vpc_security_group_ids = [aws_security_group.MyAllowHttp.id]

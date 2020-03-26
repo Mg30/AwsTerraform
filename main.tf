@@ -8,6 +8,8 @@ module "EC2VPCIG" {
   publicSubnetNetnum = 2
   filePathPublicInstancePublicSSHKey = "./ssh_key.pub"
   filePathPublicInstancePrivateSSHKey = "./ssh_key"
+  instanceType = "t2.micro"
+  ami = "ami-0fc61db8544a617ed"
 }
 
 output "public_ip" {

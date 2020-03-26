@@ -22,3 +22,13 @@ variable "filePathPublicInstancePrivateSSHKey" {
     description = "the file path for the ssh_key.pem file"
     type = string
 }
+
+variable "instanceType" {
+    description = "the type of instance"
+    type = string
+}
+
+variable "ami" {
+    description = "the ami to mount on the instance"
+    type = string
+}

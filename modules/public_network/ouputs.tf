@@ -1,4 +1,4 @@
-output "all_public_ip" {
-  value       = values(aws_instance.my_public_EC2)[*].public_ip
+output "public_subnet_id" {
+  value       = aws_subnet.my_public_subnet.id
   description = "The public IP of instances created"
 }
